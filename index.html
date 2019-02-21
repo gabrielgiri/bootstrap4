@@ -8,10 +8,115 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Bootstrap4 Demo</title>
+    <style>
+.border {
+    border: dotted 1px;
+    padding: 5px;
+}
+.bg {
+    background-color: antiquewhite;
+}
+    .bg1 {
+        background-color:lightsalmon;
+        height: 100px;
+    }
+    .bg2 {
+        background-color: lightcoral;
+        height: 100px;
+    }
+    .bg3 {
+        background-color: lightpink;
+        height: 100px;
+    }
+    .bg4 {
+        background-color: darkred;
+        color: white;
+        height: 100px;
+    }
+    </style>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    
+    <div class="container">
+           
+        <div class="row">
+            <div class="col">
+                <h3>Header</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus quidem quam itaque similique nostrum impedit nesciunt cumque fugit dolorum voluptatibus!</p>
+            </div>
+        </div>
+
+        <div class="row">
+                <div class="col-xs-12 col-md-8 col-xl-4 d-none d-sm-block bg1">
+                    Hiding this div on XS - Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, officiis!
+                </div>
+                <div class="col-xs-12 col-md-4 col-xl 4 bg2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, similique.
+                </div>
+                <div class="col-xs-12 col-md-12 col-xl-4 bg3">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, voluptatum?
+                </div>
+        </div>
+
+        <div class="row justify-content-around">
+            <div class="col-3 bg1">
+                Uno
+                        </div>
+            <div class="col-3 bg2">
+                dos
+            </div>
+            <div class="col-3 bg3 flex-first">
+               Tres
+            </div>
+        </div>
+
+        
+        <div class="row  bg" style="height:200px;"> <!--puedo usar items en lugar de selt para el row-->
+            <div class="col-3 bg1 align-self-start"><!--align-self-start no es necesario, es por default-->
+                Uno
+                        </div>
+            <div class="col-3 bg2 align-self-center">
+                dos
+            </div>
+            <div class="col-3 bg3 align-self-end">
+               Tres
+            </div>
+        </div>
+
+     
+            <p>Apretar <kbd>Control + C</kbd> para copiar un texto</p>
+            <p>Apretar <kbd>Control + V</kbd> para pegar un texto</p>
+
+
+        <div class="row">
+                <div class="col border">
+                    <span class="float-left">Contenido Izquierda</span>
+                    <span class="float-right">Contenido Derecha</span>
+                </div>
+                <div class="col border">
+                    <span class="float-left">Contenido Izquierda</span>
+                    <span class="float-right">Contenido Derecha</span>
+                </div>
+        </div>
+
+        <div class="row d-block">
+                <div class="float-sm-right">UNO</div><br>
+                <div class="float-md-right">DOS</div><br>
+                <div class="float-lg-right">TRES</div><br>
+                <div class="float-xl-right">CUADRO</div><br>
+                <div class="float-none">CINCO</div>
+                <div class="mx-auto border" style="width: 100px;">CENTRADO</div>
+        </div>
+     
+            <div class="row fixed-bottom bg4 p-3">
+                    <div class="col">
+                            <h4>Footer</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus quidem quam itaque similique nostrum impedit nesciunt cumque fugit dolorum voluptatibus!</p>
+                    </div>
+            </div>    
+
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
